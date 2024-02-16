@@ -1,5 +1,9 @@
 https://www.youtube.com/watch?v=G0bBLvWXBvc&list=PL0vfts4VzfNjsTV_6i9a9iczMnthWqHzM&index=9
 
+
+https://nx.dev/getting-started/tutorials/angular-standalone-tutorial
+
+
 https://github.com/fireship-io/angular-tic-tac-toe
 https://github.com/DayuanTan/angular-tic-tac-toe
 
