@@ -41,3 +41,17 @@ So I use Nx to create the "myorg" folder/workspace.
 The myapp and myorg folder actually have very similar file architecutre.
 Next I will follow steps in the (previous video](https://www.youtube.com/watch?v=G0bBLvWXBvc&list=PL0vfts4VzfNjsTV_6i9a9iczMnthWqHzM&index=9) to develop the tic tac toe app but inside the myorg folder.
 
+
+For those steps following videos, please see may commits:
+- [https://github.com/DayuanTan/angular_app_tic_tac_toe/commits/main/](https://github.com/DayuanTan/angular_app_tic_tac_toe/commits/main/)
+    - http://localhost:4200/ shows square works!
+    - add a random number property in component class then bind it to the template
+    - a random number changes every 500 ms works well
+    - generate a board component with default setting
+    - game works now with plain ui
+
+
+Next, use [Nebula](https://akveo.github.io/nebular/docs/guides/install-nebular#install-nebular) to make it more beautiful. 
+
+
+
