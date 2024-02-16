@@ -1,6 +1,7 @@
 # Angular App - Tic Tac Toe
 
 ![](media/final_appear.png)
+![](media/demo_show_final_1280x880.gif)
 
 
 ## Contents
@@ -69,6 +70,9 @@ When the video use Angular Console, just replace with Nx console which are simil
     - game works now with plain ui
 
 
+![](media/demo_show_middle_1280x720.gif)
+
+
 ### Part 3: Beautify - Issue about Nebula theme
 
 Next, use [Nebula](https://akveo.github.io/nebular/docs/guides/install-nebular#install-nebular) to make it more beautiful. 
@@ -97,3 +101,5 @@ So what I did is:
     - Added content into [myorg/src/app/app.component.html](myorg/src/app/app.component.html)
     - Then of courses, import necessary parts in each *.component.ts files. 
 
+
+![](media/demo_show_final_1280x880.gif)
