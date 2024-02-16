@@ -10,7 +10,9 @@ import { CommonModule } from '@angular/common';
 })
 export class SquareComponent {
 
-  rando = Math.random();
+  rando : number  = 0;
 
-  
+  constructor() {
+    setInterval(  () => this.rando = Math.random(), 500);
+  } 
 }
