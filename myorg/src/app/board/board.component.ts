@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SquareComponent } from '../square/square.component';
+
+import { NebularModule } from '../nebular/nebular.module';
+import { NbThemeModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
+
 
 @Component({
   selector: 'myorg-board',
   standalone: true,
-  imports: [SquareComponent, CommonModule],
+  imports: [NebularModule, NbThemeModule, NbLayoutModule, NbButtonModule , SquareComponent, CommonModule],
   templateUrl: './board.component.html',
   styleUrl: './board.component.css',
 })
-export class BoardComponent 
+export class BoardComponent implements OnInit 
 {
   squares!: any[]; // "squares: any[]" gaves me error so I had to add "!". The definite assignment assertion operator (!) tells TypeScript that the variable will be assigned for sure, and it's a way to bypass the strict initialization checks. 
   xIsNext!: boolean;

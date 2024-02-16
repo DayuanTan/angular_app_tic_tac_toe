@@ -1,10 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { NebularModule } from '../nebular/nebular.module';
+import { NbThemeModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
+
+
 @Component({
   selector: 'myorg-square',
   standalone: true,
-  imports: [CommonModule],
+  imports: [NebularModule, NbThemeModule, NbLayoutModule, NbButtonModule, CommonModule],
   template: `
     <button nbButton *ngIf="!value">{{ value }}</button>
     <button nbButton hero status="success" *ngIf="value == 'X'">{{ value }}</button>
