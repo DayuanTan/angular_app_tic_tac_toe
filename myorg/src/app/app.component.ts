@@ -4,9 +4,12 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { SquareComponent } from './square/square.component';
 import { BoardComponent } from './board/board.component';
 
+import { NebularModule } from './nebular/nebular.module';
+import { NbThemeModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
+
 @Component({
   standalone: true,
-  imports: [BoardComponent, SquareComponent, NxWelcomeComponent, RouterModule],
+  imports: [NebularModule, NbThemeModule, NbLayoutModule, NbButtonModule, BoardComponent, SquareComponent, NxWelcomeComponent, RouterModule],
   selector: 'myorg-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
