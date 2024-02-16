@@ -5,7 +5,12 @@ import { CommonModule } from '@angular/common';
   selector: 'myorg-square',
   standalone: true,
   imports: [CommonModule],
-  template: `<p>square works!</p>`,
+  template: `<p>square works! A "Math.random()"" number: {{rando}}</p>`,
   styles: ``,
 })
-export class SquareComponent {}
+export class SquareComponent {
+
+  rando = Math.random();
+
+  
+}
