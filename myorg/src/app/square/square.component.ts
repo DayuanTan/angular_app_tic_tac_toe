@@ -1,18 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'myorg-square',
   standalone: true,
   imports: [CommonModule],
-  template: `<p>square works! A "Math.random()"" number: {{rando}}</p>`,
-  styles: ``,
+  template: `
+    <button nbButton *ngIf="!value">{{ value }}</button>
+    <button nbButton hero status="success" *ngIf="value == 'X'">{{ value }}</button>
+    <button nbButton hero status="info" *ngIf="value == 'O'">{{ value }}</button>
+  `,
+ 
+  styles: ['button { width: 100%; height: 100%; font-size: 5em !important; }']
+
 })
 export class SquareComponent {
 
-  rando : number  = 0;
-
-  constructor() {
-    setInterval(  () => this.rando = Math.random(), 500);
-  } 
+  @Input() value!: 'X' | 'O';
 }
